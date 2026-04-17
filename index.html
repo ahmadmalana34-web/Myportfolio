@@ -1,0 +1,666 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Muhammad Ahmad - Portfolio</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script> -->
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">PORTFOLIO</div>
+      <div class="menu-toggle" id="mobile-menu">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#about">About Me</a></li>
+
+        <li><a href="#contact" class="btn-contact">Contact Me</a></li>
+        <li>
+          <button
+            id="theme-toggle"
+            class="theme-toggle-btn"
+            aria-label="Toggle Theme"
+            style="
+              padding: 0.5rem 1rem;
+              font-size: 0.9rem;
+              margin-right: 0.5rem;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            "
+          >
+            <i class="fa-solid fa-moon"></i>
+            <span id="theme-text" style="margin-left: 0.5rem">Dark Mood</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+
+    <main class="landing-page" id="home">
+      <div class="content-wrapper">
+        <div class="left-section">
+          <div class="image-container">
+            <!-- Professional gentlemen placeholder from unsplash -->
+            <img src="ahmad.jpeg" alt="Muhammad Ahmad" />
+            <div class="image-backdrop"></div>
+          </div>
+        </div>
+
+        <div class="right-section">
+          <p class="greeting">Hello, I'm</p>
+          <h1 class="name">Muhammad Ahmad</h1>
+          <div class="title-container">
+            <span class="animated-text"></span>
+          </div>
+
+          <div class="info-grid">
+            <div class="info-item">
+              <div class="icon-wrapper">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <span>Bahawalpur, Pakistan</span>
+            </div>
+            <div class="info-item">
+              <div class="icon-wrapper">
+                <i class="fa-solid fa-briefcase"></i>
+              </div>
+              <span>Frontend Developer</span>
+            </div>
+            <div class="info-item">
+              <div class="icon-wrapper"><i class="fa-solid fa-phone"></i></div>
+              <span>+92 328 6090569</span>
+            </div>
+          </div>
+
+          <div class="connect-section">
+            <h3>Connect</h3>
+            <div class="social-icons">
+              <a
+                href="https://github.com/ahmadmalana34-web"
+                aria-label="GitHub"
+                target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/ahmad-malana-06b308264"
+                aria-label="LinkedIn"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+              <a
+                href="mailto:ahmadmalana34@gmail.com?subject=Project Inquiry&body=Hello Ahmad, I want to discuss a project with you"
+                aria-label="Gmail"
+                target="_blank"
+                ><i class="fa-solid fa-envelope"></i
+              ></a>
+              <a
+                href="https://wa.me/923012345678?text=Hello Ahmad, I want to discuss a project"
+                aria-label="WhatsApp"
+                target="_blank"
+                ><i class="fa-brands fa-whatsapp"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/m.ahmad7703/?hl=en"
+                aria-label="Instagram"
+                target="_blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a
+                href="https://www.facebook.com/m.ahmad.746091"
+                aria-label="Facebook"
+                target="_blank"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+      <!-- 3D Particle / Rotating Shape Canvas Background -->
+      <div id="particles-js"></div>
+      <div class="abstract-shape"></div>
+
+      <div class="gallery-container">
+        <h2 class="section-title">My <span class="neon-text">Gallery</span></h2>
+
+        <div class="gallery-grid">
+          <!-- Card 1 -->
+          <div class="gallery-card">
+            <div class="card-image">
+              <img
+                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80"
+                alt="Web Development Project"
+              />
+            </div>
+            <div class="card-content">
+              <h3>E-Commerce Dashboard</h3>
+              <p>React + Tailwind Modern UI</p>
+              <a href="#" class="view-btn">View Project</a>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="gallery-card">
+            <div class="card-image">
+              <img
+                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80"
+                alt="UI Design"
+              />
+            </div>
+            <div class="card-content">
+              <h3>Fintech Landing Page</h3>
+              <p>Figma Design & Animation</p>
+              <a href="#" class="view-btn">View Project</a>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="gallery-card">
+            <div class="card-image">
+              <img
+                src="https://images.unsplash.com/photo-1555099962-4199c345e5dd?auto=format&fit=crop&w=800&q=80"
+                alt="Code Screenshot"
+              />
+            </div>
+            <div class="card-content">
+              <h3>System Architecture</h3>
+              <p>Backend Service Flow</p>
+              <a href="#" class="view-btn">View Project</a>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="gallery-card">
+            <div class="card-image">
+              <img
+                src="https://images.unsplash.com/photo-1507721999472-8ed4421c4af2?auto=format&fit=crop&w=800&q=80"
+                alt="Design Inspiration"
+              />
+            </div>
+            <div class="card-content">
+              <h3>Creative Portfolio</h3>
+              <p>GSAP + Three.js Clone</p>
+              <a href="#" class="view-btn">View Project</a>
+            </div>
+          </div>
+          <!-- Card 5 -->
+          <div class="gallery-card">
+            <div class="card-image">
+              <img
+                src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=800&q=80"
+                alt="Code Interface"
+              />
+            </div>
+            <div class="card-content">
+              <h3>IDE Theme Creation</h3>
+              <p>VS Code Custom Theme</p>
+              <a href="#" class="view-btn">View Project</a>
+            </div>
+          </div>
+          <!-- Card 6 -->
+          <div class="gallery-card">
+            <div class="card-image">
+              <img
+                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80"
+                alt="Dashboard"
+              />
+            </div>
+            <div class="card-content">
+              <h3>Analytics Dashboard</h3>
+              <p>Data visualization UI</p>
+              <a href="#" class="view-btn">View Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+      <div class="skills-bg"></div>
+      <h2 class="section-title">My <span class="neon-text">Skills</span></h2>
+
+      <div class="carousel-container">
+        <!-- Progress Bar -->
+        <div class="progress-bar-wrapper">
+          <div class="progress-bar"></div>
+        </div>
+
+        <div class="carousel-track">
+          <!-- Skill 1 -->
+          <div class="skill-item">
+            <div class="skill-content">
+              <i
+                class="fa-brands fa-html5 skill-icon"
+                style="color: #e34c26"
+              ></i>
+              <h3>HTML & CSS</h3>
+              <p>Responsive Layouts, Grids, GSAP Animations</p>
+            </div>
+          </div>
+          <!-- Skill 2 -->
+          <div class="skill-item">
+            <div class="skill-content">
+              <i class="fa-brands fa-js skill-icon" style="color: #f7df1e"></i>
+              <h3>JavaScript</h3>
+              <p>ES6+, DOM Manipulation, APIs</p>
+            </div>
+          </div>
+          <!-- Skill 3 -->
+          <div class="skill-item">
+            <div class="skill-content">
+              <i
+                class="fa-brands fa-react skill-icon"
+                style="color: #61dafb"
+              ></i>
+              <h3>React</h3>
+              <p>Hooks, Context, State Management</p>
+            </div>
+          </div>
+          <!-- Skill 4 -->
+          <div class="skill-item">
+            <div class="skill-content">
+              <!-- Using raw font style for GSAP since there's no native brand icon for GSAP usually -->
+              <span
+                class="skill-icon"
+                style="
+                  color: #88ce02;
+                  font-weight: 800;
+                  font-family: &quot;Outfit&quot;;
+                  font-style: normal;
+                "
+                >G</span
+              >
+              <h3>GSAP</h3>
+              <p>ScrollTrigger, Timelines, Motion Design</p>
+            </div>
+          </div>
+          <!-- Skill 5 -->
+          <div class="skill-item">
+            <div class="skill-content">
+              <i
+                class="fa-solid fa-paintbrush skill-icon"
+                style="color: #a855f7"
+              ></i>
+              <h3>UI/UX Design</h3>
+              <p>Figma, Prototyping, Wireframing</p>
+            </div>
+          </div>
+          <!-- Skill 6 -->
+          <div class="skill-item">
+            <div class="skill-content">
+              <i
+                class="fa-brands fa-node-js skill-icon"
+                style="color: #339933"
+              ></i>
+              <h3>Node.js</h3>
+              <p>Express, REST APIs, Backend Basics</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-controls">
+          <button class="nav-btn prev-btn">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <button class="nav-btn next-btn">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume-section">
+      <div class="resume-actions">
+        <button id="download-pdf-btn" class="resume-btn">
+          <i class="fa-solid fa-download"></i> Download PDF
+        </button>
+        <button onclick="window.print()" class="resume-btn outline">
+          <i class="fa-solid fa-print"></i> Print Resume
+        </button>
+      </div>
+
+      <div class="resume-container" id="resume-document">
+        <!-- 1. Header Section -->
+        <header class="resume-header">
+          <img src="ahmad.jpeg" alt="Muhammad Ahmad" class="resume-img" />
+          <div class="header-info">
+            <h2>Muhammad Ahmad</h2>
+            <h3 class="resume-title">Frontend Developer (Intern)</h3>
+            <div class="contact-info">
+              <span
+                ><i class="fa-solid fa-envelope"></i>
+                ahmadmalana34@gmail.com</span
+              >
+              <span><i class="fa-solid fa-phone"></i> +92 328 6090569</span>
+              <span
+                ><i class="fa-solid fa-location-dot"></i> Bahawalpur,
+                Pakistan</span
+              >
+            </div>
+          </div>
+        </header>
+
+        <hr class="resume-divider" />
+
+        <div class="resume-grid">
+          <!-- Left Column -->
+          <div class="resume-left">
+            <!-- 2. Personal Information -->
+            <div class="resume-block">
+              <h3 class="block-title">Personal Information</h3>
+              <ul class="info-list">
+                <li><strong>DOB:</strong> 03-06-2004</li>
+                <li><strong>CNIC:</strong> 31201-0102528-5</li>
+              </ul>
+            </div>
+
+            <!-- 4. Skills Section -->
+            <div class="resume-block">
+              <h3 class="block-title">Skills</h3>
+              <ul class="bullet-list">
+                <li>HTML5</li>
+                <li>CSS3 (Flexbox, Grid, Responsive Design)</li>
+                <li>JavaScript (DOM Manipulation, Events)</li>
+                <li>GSAP (Basic Animations, ScrollTrigger)</li>
+                <li>Figma to HTML Conversion</li>
+                <li>Responsive Web Design</li>
+                <li>GitHub (Basic)</li>
+              </ul>
+            </div>
+
+            <!-- 6. Tools -->
+            <div class="resume-block">
+              <h3 class="block-title">Tools</h3>
+              <ul class="bullet-list">
+                <li>VS Code</li>
+                <li>Chrome DevTools</li>
+                <li>GitHub</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Right Column -->
+          <div class="resume-right">
+            <!-- 3. Objective -->
+            <div class="resume-block">
+              <h3 class="block-title">Objective</h3>
+              <p class="objective-text">
+                A motivated and passionate frontend developer seeking an
+                internship opportunity to apply my skills in HTML, CSS,
+                JavaScript, and modern animation libraries. Eager to learn,
+                grow, and contribute to real-world projects.
+              </p>
+            </div>
+
+            <!-- Education -->
+            <div class="resume-block">
+              <h3 class="block-title">Education</h3>
+              <div class="timeline-item">
+                <h4>BS Political Science (In Progress, 4th Semester)</h4>
+                <p>
+                  Simultaneously doing course from Coursera about tech & web
+                  development.
+                </p>
+              </div>
+              <div class="timeline-item">
+                <h4>Intermediate</h4>
+                <p>FSc Pre-Medical</p>
+              </div>
+            </div>
+
+            <!-- 5. Projects -->
+            <div class="resume-block">
+              <h3 class="block-title">Projects</h3>
+              <div class="timeline-item">
+                <h4>To-Do List App</h4>
+                <p>
+                  Interactive web application utilizing JavaScript and DOM
+                  manipulation for state management.
+                </p>
+              </div>
+              <div class="timeline-item">
+                <h4>Landing Page</h4>
+                <p>
+                  Pixel-perfect Figma to HTML/CSS conversion with responsive
+                  layouts.
+                </p>
+              </div>
+              <div class="timeline-item">
+                <h4>Animated UI using GSAP</h4>
+                <p>
+                  Implemented modern scroll-based entrance animations and
+                  interactive micro-interactions.
+                </p>
+              </div>
+            </div>
+
+            <!-- 7. Experience -->
+            <div class="resume-block">
+              <h3 class="block-title">Experience</h3>
+              <div class="timeline-item">
+                <h4>Self-Learning Web Developer</h4>
+                <p>
+                  Practicing modern frontend development and building projects
+                  independently.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about-section">
+      <h2 class="section-title">About <span class="neon-text">Me</span></h2>
+      <div class="about-wrapper">
+        <!-- Left Image -->
+        <div class="about-img-container">
+          <div class="about-img-glow"></div>
+          <img src="ahmad.jpeg" alt="Muhammad Ahmad" class="about-img" />
+        </div>
+
+        <!-- Right Content -->
+        <div class="about-content">
+          <div class="about-card intro-card">
+            <h3><i class="fa-solid fa-user"></i> Introduction</h3>
+            <p>
+              I am a passionate frontend developer focused on building modern,
+              interactive, and highly user-friendly web experiences. I strive to
+              merge technical proficiency with creative interface design to
+              deliver seamless products.
+            </p>
+          </div>
+
+          <div class="about-card journey-card">
+            <h3><i class="fa-solid fa-route"></i> My Journey</h3>
+            <p>
+              My background originally began in Pre-Medical studies, but I soon
+              discovered a profound interest in technology. I am currently
+              pursuing a specialized tech course via Coursera to formalize my
+              shift into web development. To make this dream possible, I worked
+              diligently in a restaurant to save enough money to purchase my
+              first laptop, which empowered me to start learning and freelancing
+              independently.
+            </p>
+          </div>
+
+          <div class="about-grid">
+            <div class="about-card">
+              <h3><i class="fa-solid fa-laptop-code"></i> What I Do</h3>
+              <ul class="about-list">
+                <li>Convert Figma layouts into highly responsive websites</li>
+                <li>Engineer interactive UI using HTML, CSS, & JavaScript</li>
+                <li>
+                  Design dynamic animations leveraging GSAP & ScrollTrigger
+                </li>
+              </ul>
+            </div>
+
+            <div class="about-card">
+              <h3><i class="fa-solid fa-bolt"></i> Strengths</h3>
+              <ul class="about-list">
+                <li>Uncompromising consistency & dedication</li>
+                <li>Relentless problem-solving mindset</li>
+                <li>Extremely fast and adaptable learner</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="about-card goal-card">
+            <h3><i class="fa-solid fa-bullseye"></i> Future Goals</h3>
+            <ul class="about-list">
+              <li>
+                Securing challenging and transformative internship opportunities
+              </li>
+              <li>
+                Collaborating to contribute to real-world, impactful projects
+              </li>
+              <li>
+                Continuously improving and expanding my core frontend expertise
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Me Section -->
+    <section id="contact" class="contact-section">
+      <h2 class="section-title">Contact <span class="neon-text">Me</span></h2>
+      <p class="section-subtitle">Let's work together</p>
+
+      <div class="contact-wrapper">
+        <!-- Left Side: Info -->
+        <div class="contact-info-container">
+          <h3>Get In Touch</h3>
+          <p>I’m available for internship opportunities and freelance work.</p>
+
+          <div class="contact-links">
+            <a
+              href="mailto:ahmadmalana34@gmail.com?subject=Project Inquiry&body=Hello Ahmad, I want to discuss a project with you"
+              class="contact-item"
+              target="_blank"
+            >
+              <div class="icon-box"><i class="fa-solid fa-envelope"></i></div>
+              <div class="contact-text">
+                <h4>Email</h4>
+                <span>ahmadmalana34@gmail.com</span>
+              </div>
+            </a>
+
+            <a
+              href="https://wa.me/923012345678?text=Hello Ahmad, I want to discuss a project"
+              class="contact-item"
+              target="_blank"
+            >
+              <div class="icon-box"><i class="fa-brands fa-whatsapp"></i></div>
+              <div class="contact-text">
+                <h4>WhatsApp</h4>
+                <span>+92 328 6090569</span>
+              </div>
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/ahmad-malana-06b308264"
+              class="contact-item"
+              target="_blank"
+            >
+              <div class="icon-box">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </div>
+              <div class="contact-text">
+                <h4>LinkedIn</h4>
+                <span>ahmad-malana-06b308264</span>
+              </div>
+            </a>
+
+            <a
+              href="https://github.com/ahmadmalana34-web"
+              class="contact-item"
+              target="_blank"
+            >
+              <div class="icon-box"><i class="fa-brands fa-github"></i></div>
+              <div class="contact-text">
+                <h4>GitHub</h4>
+                <span>ahmadmalana34-web</span>
+              </div>
+            </a>
+
+            <a
+              href="https://www.instagram.com/m.ahmad7703/?hl=en"
+              class="contact-item"
+              target="_blank"
+            >
+              <div class="icon-box"><i class="fa-brands fa-instagram"></i></div>
+              <div class="contact-text">
+                <h4>Instagram</h4>
+                <span>@m.ahmad7703</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Side: Form -->
+        <div class="contact-form-container">
+          <form
+            class="contact-form"
+            onsubmit="
+              event.preventDefault();
+              alert('Message Sent Successfully!');
+            "
+          >
+            <div class="input-group">
+              <input type="text" id="name" required />
+              <label for="name">Your Name</label>
+            </div>
+
+            <div class="input-group">
+              <input type="email" id="email" required />
+              <label for="email">Your Email</label>
+            </div>
+
+            <div class="input-group">
+              <textarea id="message" rows="5" required></textarea>
+              <label for="message">Your Message</label>
+            </div>
+
+            <button type="submit" class="submit-btn">
+              <span>Send Message</span> <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Plugins -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <!-- GSAP for Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
